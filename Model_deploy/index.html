@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.11.0/dist/tf.min.js" type="text/javascript"> </script>
+    <title>Klasifikasi Jenis Kayu</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Klasifikasi Jenis Kayu</h1>
+
+        <form id="classificationForm" action="#" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <input type="file" id="imageFile" name="imageFile" accept="image/*" required>
+                <div id="selectedImageContainer"> citra kayu</div>
+                <label>Hasil :</label>
+                <div id="result" class="result">Jenis Kayu :</div>
+                <div id="confidenceResult" class="result">Confidence : </div>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
